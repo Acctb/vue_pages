@@ -1,0 +1,15 @@
+.cc-nav {
+  position: absolute;
+  bottom: 0;
+  padding: 5px 0 0;
+  width: 100%;
+  display: flex;
+}
+
+.nav-block {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
