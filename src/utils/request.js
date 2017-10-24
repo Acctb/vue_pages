@@ -1,5 +1,7 @@
 import 'whatwg-fetch'
 
+import 'wretch'
+
 export default {
     /**
      * @param url
