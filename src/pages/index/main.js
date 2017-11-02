@@ -6,12 +6,13 @@ import cctb from '../../utils/index.js'
 
 import { config } from '../../config'
 
+import '../../assets/css/index.scss'
+
 window.ccConfig = config;
 window.cctb = cctb;
 
 Vue.config.productionTip = false
 
-import '../../assets/css/index.scss'
 
 new Vue({
   el: '#app',
