@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './index'
+
 import router from '../../router'
 
 import cctb from '../../utils/index.js'
