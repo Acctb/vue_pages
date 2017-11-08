@@ -8,7 +8,6 @@ import cctb from '../../utils/index.js'
 
 import { config } from '../../config'
 
-
 import '../../assets/css/index.scss'
 
 window.ccConfig = config;
