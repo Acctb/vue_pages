@@ -12,7 +12,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 // components
 import App from './index'
 import router from '../../router'
-import store from './store'
+import store from '@/store'
 
 import '@/icons' // icon
 import '@/permission' // permission control
