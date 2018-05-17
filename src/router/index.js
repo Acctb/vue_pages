@@ -4,6 +4,8 @@ const _import = require('./_import_' + process.env.NODE_ENV)
 
 Vue.use(Router)
 
+import Layout from '@/module/layout/index'
+
 export const constantRouterMap = [
   { path: '/404', component: _import('errorPage/404'), hidden: true },
   { path: '/401', component: _import('errorPage/401'), hidden: true },
