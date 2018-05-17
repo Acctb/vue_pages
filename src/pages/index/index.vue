@@ -6,16 +6,6 @@
 
 <script>
 export default {
-  name: 'app',
-
-  mounted() {
-    this.init();
-  },
-
-  methods: {
-    init() {
-      
-    }
-  }
+  name: 'App'
 }
 </script>

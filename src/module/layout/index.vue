@@ -4,7 +4,7 @@
     <div class="main-container">
       <navbar></navbar>
       <tags></tags>
-      <main></main>
+      <container></container>
     </div>
   </div>
 </template>
@@ -13,7 +13,7 @@
   import {
     Navbar,
     Sidebar,
-    Main,
+    Container,
     Tags
   } from './components'
   export default {
@@ -21,7 +21,7 @@
     components: {
       Navbar,
       Sidebar,
-      Main,
+      Container,
       Tags
     },
   }

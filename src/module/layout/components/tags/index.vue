@@ -5,6 +5,6 @@
 
 <script>
 export default {
-  name: 'layout',
+  name: 'tags',
 }
 </script>
