@@ -30,6 +30,8 @@ export const constantRouterMap = [
   { path: '*', redirect: '/404', hidden: true }
 ]
 
+export const asyncRouterMap = []
+
 export default new Router({
   // mode: 'history', //后端支持可开
   scrollBehavior: () => ({ y: 0 }),
