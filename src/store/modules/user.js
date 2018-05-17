@@ -8,7 +8,7 @@ const user = {
     code: '',
     token: getToken(),
     name: '',
-    avatar: '',
+    avatar: '/static/img/cother.jpg',
     introduction: '',
     roles: [],
     setting: {
