@@ -49,11 +49,10 @@
 
 <script>
 import { isvalidUsername } from '@/utils/validate'
-import LangSelect from '@/components/LangSelect'
 import SocialSign from './socialsignin'
 
 export default {
-  components: { LangSelect, SocialSign },
+  components: { SocialSign },
   name: 'login',
   data() {
     const validateUsername = (rule, value, callback) => {
