@@ -8,6 +8,6 @@
 import { mapGetters } from 'vuex'
 
 export default {
-  name: 'notice'
+  name: 'Notice'
 }
 </script>
