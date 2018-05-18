@@ -33,6 +33,39 @@ export const constantRouterMap = [
     }]
   },
   {
+    path: '/documentation',
+    component: Layout,
+    redirect: '/documentation/index',
+    children: [{
+      path: 'index',
+      component: _import('notice/index'),
+      name: 'documentation',
+      meta: { title: 'documentation', icon: 'documentation', noCache: true }
+    }]
+  },
+  {
+    path: '/documentation',
+    component: Layout,
+    redirect: '/documentation/index',
+    children: [{
+      path: 'index',
+      component: _import('notice/index'),
+      name: 'documentation',
+      meta: { title: 'documentation', icon: 'documentation', noCache: true }
+    }]
+  },
+  {
+    path: '/documentation',
+    component: Layout,
+    redirect: '/documentation/index',
+    children: [{
+      path: 'index',
+      component: _import('notice/index'),
+      name: 'documentation',
+      meta: { title: 'documentation', icon: 'documentation', noCache: true }
+    }]
+  },
+  {
     path: '/login',
     component: () => import('@/module/login/index'),
     hidden: true
