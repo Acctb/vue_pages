@@ -30,7 +30,7 @@ export const constantRouterMap = [
       path: 'notice',
       component: _import('notice/index'),
       name: 'notice',
-      meta: { title: 'notice', icon: 'documentation', noCache: true }
+      meta: { title: 'Notice', icon: 'documentation', noCache: true }
     }]
   },
   {
