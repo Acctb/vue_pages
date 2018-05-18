@@ -22,15 +22,15 @@ export const constantRouterMap = [
   //   }]
   // },
   {
-    path: '/',
+    path: '',
     component: Layout,
-    redirect: '/notice',
+    redirect: 'notice',
     name: 'Notice',
     children: [{
       path: 'notice',
       component: _import('notice/index'),
-      name: 'notice',
-      meta: { title: 'Notice', icon: 'documentation', noCache: true }
+      name: 'Notice',
+      meta: { title: 'notice', icon: 'documentation', noCache: true }
     }]
   },
   {
