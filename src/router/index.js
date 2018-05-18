@@ -25,7 +25,6 @@ export const constantRouterMap = [
     path: '',
     component: Layout,
     redirect: 'notice',
-    name: 'Notice',
     children: [{
       path: 'notice',
       component: _import('notice/index'),
