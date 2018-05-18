@@ -1,6 +1,7 @@
 <template>
-  <div class="app-wrapper">
+  <div class="app-wrapper" :class="classObj">
     <div style="width:180px;height:50px;background:#FFF;position:absolute"></div>
+    <div v-if="device==='mobile'&&sidebar.opened" class="drawer-bg" @click="handleClickOutside"></div>
     <sidebar class="sidebar-container"></sidebar>
     <div class="main-container">
       <navbar></navbar>
@@ -17,7 +18,7 @@
     Container,
     Tags
   } from './components'
-  import ResizeMixin from './mixin/ResizeHandler'
+  // import ResizeMixin from './mixin/ResizeHandler'
   export default {
     name: 'layout',
     components: {
@@ -26,7 +27,7 @@
       Container,
       Tags
     },
-    mixins: [ResizeMixin],
+    // mixins: [ResizeMixin],
     computed: {
       sidebar() {
         return this.$store.state.app.sidebar
