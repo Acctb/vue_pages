@@ -1,6 +1,7 @@
 export default {
     route: {
       dashboard: 'Dashboard',
+      notice:'Notice of registration',
       introduction: 'Introduction',
       documentation: 'Documentation',
       permission: 'Permission',

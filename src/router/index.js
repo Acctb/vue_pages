@@ -9,6 +9,18 @@ import Layout from '@/module/layout/index'
 export const constantRouterMap = [
   { path: '/404', component: _import('errorPage/404'), hidden: true },
   { path: '/401', component: _import('errorPage/401'), hidden: true },
+  // {
+  //   path: '/',
+  //   component: Layout,
+  //   redirect: '/dashboard',
+  //   name: 'Dashboard',
+  //   children: [{
+  //     path: 'dashboard',
+  //     component: _import('dashboard/index'),
+  //     name: 'dashboard',
+  //     meta: { title: 'dashboard', icon: 'dashboard', noCache: true }
+  //   }]
+  // },
   {
     path: '/',
     component: Layout,
