@@ -1,5 +1,6 @@
 <template>
   <div class="app-wrapper">
+    <div style="width:180px;height:50px;background:#FFF;position:absolute"></div>
     <sidebar class="sidebar-container"></sidebar>
     <div class="main-container">
       <navbar></navbar>
