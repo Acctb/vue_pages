@@ -1,5 +1,5 @@
 <template>
-  <el-menu class="navbar" mode="horizontal">
+  <el-menu class="navbar nav-header" mode="horizontal">
     <hamburger class="hamburger-container" :toggleClick="toggleSideBar" :isActive="sidebar.opened"></hamburger>
     <breadcrumb class="breadcrumb-container"></breadcrumb>
     <div class="right-menu">
@@ -64,6 +64,9 @@
 </script>
 
 <style lang="scss" scoped>
+  .nav-header{
+    position:relative;
+  }
   .navbar {
     height: 50px;
     line-height: 50px;

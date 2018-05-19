@@ -1,12 +1,13 @@
 <template>
   <div class="app-wrapper" :class="classObj">
-    <div style="width:180px;height:50px;background:#FFF;position:absolute"></div>
     <div v-if="device==='mobile'&&sidebar.opened" class="drawer-bg" @click="handleClickOutside"></div>
+    <navbar></navbar>
     <sidebar class="sidebar-container"></sidebar>
     <div class="main-container">
-      <navbar></navbar>
-      <tags></tags>
-      <container></container>
+      <el-scrollbar wrapClass="scrollbar-wrapper">
+        <tags></tags>
+        <container></container>
+      </el-scrollbar>
     </div>
   </div>
 </template>
@@ -18,7 +19,7 @@
     Container,
     Tags
   } from './components'
-  // import ResizeMixin from './mixin/ResizeHandler'
+  import ResizeMixin from './mixin/ResizeHandler'
   export default {
     name: 'layout',
     components: {
@@ -27,7 +28,7 @@
       Container,
       Tags
     },
-    // mixins: [ResizeMixin],
+    mixins: [ResizeMixin],
     computed: {
       sidebar() {
         return this.$store.state.app.sidebar
@@ -60,6 +61,7 @@
     height: 100%;
     width: 100%;
   }
+
   .drawer-bg {
     background: #000;
     opacity: 0.3;
@@ -68,5 +70,10 @@
     height: 100%;
     position: absolute;
     z-index: 999;
+  }
+
+  .main-container {
+    background: red;
+    height: calc(100% - 50px) !important;
   }
 </style>
