@@ -19,12 +19,6 @@ import '@/permission' // permission control
 
 Vue.use(ElementUI, { locale })
 
-// config
-import cctb from '../../utils/index.js'
-import { config } from '../../config'
-window.ccConfig = config;
-window.cctb = cctb;
-
 Vue.config.productionTip = false
 
 new Vue({

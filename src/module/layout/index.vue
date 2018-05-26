@@ -4,8 +4,8 @@
     <navbar></navbar>
     <sidebar class="sidebar-container"></sidebar>
     <div class="main-container">
+      <tags></tags>
       <el-scrollbar wrapClass="scrollbar-wrapper">
-        <tags></tags>
         <container></container>
       </el-scrollbar>
     </div>
@@ -55,13 +55,15 @@
 </script>
 <style lang="scss" scoped>
   @import "src/assets/styles/mixin.scss";
+  .sidebar-container {
+    border-right: 1px solid #e6e6e6;
+  }
   .app-wrapper {
     @include clearfix;
     position: relative;
     height: 100%;
     width: 100%;
   }
-
   .drawer-bg {
     background: #000;
     opacity: 0.3;
@@ -71,9 +73,20 @@
     position: absolute;
     z-index: 999;
   }
-
   .main-container {
-    background: red;
-    height: calc(100% - 50px) !important;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .scrollbar-wrapper {
+      height: calc(100% + 15px);
+      .el-scrollbar__view {
+        height: 100%;
+      }
+    }
+  }
+  .el-scrollbar {
+    height: calc(100% - 34px);
   }
 </style>

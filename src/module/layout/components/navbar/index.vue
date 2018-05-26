@@ -49,7 +49,6 @@
     methods: {
       changeIcon() {
         this.iconUp = !this.iconUp;
-        console.log('this.iconUp',this.iconUp);
       },
       toggleSideBar() {
         this.$store.dispatch('toggleSideBar')
@@ -64,8 +63,9 @@
 </script>
 
 <style lang="scss" scoped>
-  .nav-header{
-    position:relative;
+  .nav-header {
+    position: relative;
+    background: #327abf;
   }
   .navbar {
     height: 50px;
@@ -119,6 +119,7 @@
           .el-icon-caret-bottom {
             position: absolute;
             right: -20px;
+            color:#FFF;
             top: 25px;
             font-size: 12px;
             transition: transform 0.5s;

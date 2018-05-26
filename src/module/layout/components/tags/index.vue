@@ -105,8 +105,8 @@ export default {
     openMenu(tag, e) {
       this.visible = true
       this.selectedTag = tag
-      this.left = e.clientX
-      this.top = e.clientY
+      this.left = e.clientX - (this.$store.state.app.sidebar.opened ? 180 : 0) 
+      this.top = e.clientY - 45
     },
     closeMenu() {
       this.visible = false

@@ -16,7 +16,7 @@
     },
     data() {
       return {
-        content: ''
+        content: '编辑修改报名须知'
       }
     }
   }

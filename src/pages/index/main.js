@@ -16,17 +16,12 @@ import store from '@/store'
 import i18n from '@/lang'
 import '@/icons' // icon
 import '@/permission' // permission control
+import '@/mock' // simulation data
 
 Vue.use(ElementUI, {
   size: 'medium', // set element-ui default size
   i18n: (key, value) => i18n.t(key, value)
 })
-
-// config
-import cctb from '../../utils/index.js'
-import { config } from '../../config'
-window.ccConfig = config;
-window.cctb = cctb;
 
 Vue.config.productionTip = false
 
